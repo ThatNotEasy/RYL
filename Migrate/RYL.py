@@ -1,8 +1,12 @@
-# Author: Pari Malam
-
 from lib.mysql import MYSQL
 from lib.sqlserver import SQLSERVER
 from colorama import Fore, Style
+
+FY = Fore.YELLOW
+FG = Fore.GREEN
+FR = Fore.RED
+FW = Fore.WHITE
+R = Style.RESET_ALL
 
 if __name__ == "__main__":
     data_type_mapping = {
@@ -20,14 +24,14 @@ if __name__ == "__main__":
     databases = ['ROWadmintool', 'ROWbillingDB', 'ROWgame', 'ROWpay', 'youxiuser']
 
     for database_name in databases:
-        print(f"{Fore.YELLOW}Working with database: {database_name}{Style.RESET_ALL}")
+        print(f"{FY}Working with database: {database_name}{R}")
 
         mysql_db = MYSQL()
 
-        create_db_sql = f"CREATE DATABASE IF NOT EXISTS `{database_name}` CHARACTER SET utf8 COLLATE utf8_bin;"
+        create_db_sql = f"CREATE DATABASE IF NOT EXISTS {database_name.lower()} CHARACTER SET utf8 COLLATE utf8_bin;"
         mysql_db.execute(create_db_sql)
         mysql_db.commit()
-        print(f"{Fore.GREEN}Database '{database_name}' created in MySQL.{Style.RESET_ALL}")
+        print(f"{FY}[RYL] - {FW}DATABASE: {FR}{database_name} - {FG}[SUCCESS] - {FW}Created In MYSQL.{R}")
         mysql_db.close()
 
         select_query = f'''SELECT TABLE_NAME FROM {database_name}.INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE';'''
@@ -35,11 +39,11 @@ if __name__ == "__main__":
         sqlserver_db = SQLSERVER()
         try:
             tables = sqlserver_db.query(select_query)
-            print(f"{Fore.GREEN}Tables in {database_name}:{Style.RESET_ALL}", tables)
+            print(f"{FY}[RYL] - {FW}Tables in {FR}{database_name}: {tables}{R}")
 
             for table in tables:
                 table_name = table['TABLE_NAME']
-                print(f"{Fore.CYAN}Table: {table_name}{Style.RESET_ALL}")
+                print(f"{FY}[RYL] - TABLE: {table_name}{R}")
 
                 columns_query = f"SELECT COLUMN_NAME, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH FROM {database_name}.INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = '{table_name}';"
                 columns = sqlserver_db.query(columns_query)
@@ -60,7 +64,7 @@ if __name__ == "__main__":
 
                 mysql_db.execute(create_table_sql)
                 mysql_db.commit()
-                print(f"{Fore.GREEN}Table '{table_name}' created in MySQL.{Style.RESET_ALL}")
+                print(f"{FY}[RYL] - {FW}TABLE: {FR}{table_name} - {FG}[SUCCESS] - {FW}Create in MYSQL.{R}")
                 mysql_db.close()
 
         finally:
