@@ -8,7 +8,13 @@ if __name__ == "__main__":
     data_type_mapping = {
         'int': 'INT',
         'nvarchar': 'VARCHAR',
-        'datetime': 'DATETIME'
+        'datetime': 'DATETIME',
+        'binary': 'BINARY',
+        'varbinary': 'VARBINARY',
+        'text': 'TEXT',
+        'blob': 'BLOB',
+        # important: adjust ur datatype
+        # handle datatype at line 53
     }
 
     databases = ['ROWadmintool', 'ROWbillingDB', 'ROWgame', 'ROWpay', 'youxiuser']
