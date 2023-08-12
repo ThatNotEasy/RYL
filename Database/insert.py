@@ -1,9 +1,11 @@
 # Author: Pari Malam
 
 from lib.sqlserver import SQLSERVER
+from lib.mysql import MYSQL
 import json
 from datetime import datetime
 from colorama import init, Fore
+import mysql.connector
 
 # Initialize colorama
 init(autoreset=True)
@@ -27,7 +29,7 @@ def get_all_table_names_and_columns(database_connection):
 
     for table in tables:
         table_name = table['name']
-        if table_name not in ['sysdiagrams']:
+        if table_name not in ['sysdiagrams']:  # Skip certain system tables
             columns = get_table_info(database_connection, table_name)
             table_info[table_name] = columns
 
@@ -52,4 +54,22 @@ if __name__ == "__main__":
 
             sqlserver_db.close()
 
-    print(Fore.GREEN + json.dumps(results, indent=4, cls=CustomJSONEncoder))
+    json_output = json.dumps(results, indent=4, cls=CustomJSONEncoder)
+
+    mysql_server = MYSQL()
+
+    try:
+        # Assuming you have a MySQL database and table named "json_data"
+        db_name = "api"  # Replace with your actual database name
+        mysql_server.execute(f"USE {db_name};")
+        insert_query = "INSERT INTO json_data (data) VALUES (%s)"
+        mysql_server.execute(insert_query, (json_output,))
+        mysql_server.commit()
+
+        print(Fore.GREEN + "JSON data inserted into MySQL database successfully!")
+
+    except mysql.connector.Error as err:
+        print(Fore.RED + f"Error: {err}")
+
+    finally:
+        mysql_server.close()
