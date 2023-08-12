@@ -150,6 +150,7 @@ def save_results_to_json(results):
                 mysql_server.execute(create_table_query)
                 mysql_server.commit()
 
+<<<<<<< HEAD:Database/insert.py
                 for row in data["table_data"][table_name]:
                     insert_query = generate_insert_query(table_name, row)
                     values = tuple(row.values())
@@ -161,3 +162,7 @@ def save_results_to_json(results):
 if __name__ == "__main__":
     clear()
     main()
+=======
+    finally:
+        mysql_server.close()
+>>>>>>> 3d37c91c22e19d8e8ac07ec96fd0ec232cc0fe5e:Database/tengah_cuba_insert_semua.py
