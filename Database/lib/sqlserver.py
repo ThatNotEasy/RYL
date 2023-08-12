@@ -51,8 +51,6 @@ class SQLSERVER():
         except Exception as err:
             print(f'DATABASE on MAIN CODE - {err}', 'error')
             self.close()
-    
-            
 
     def query(self, sql, args=(), one=False):
         self.cur.execute(sql, args)
@@ -67,7 +65,5 @@ class SQLSERVER():
         self.conn.commit()
 
     def close(self):
-        if self.cur is not None:
-            self.cur.close()  # Close the cursor
-        if self.conn is not None:
-            self.conn.close()
+        self.cur.close()  # Close the cursor
+        self.conn.close()  # Close the connection
