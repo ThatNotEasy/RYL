@@ -1,0 +1,11 @@
+- Here's a more detailed and clear version of your instructions in English:
+
+- Decrypt the monsterscript.gcf file using the latest release of "mcfcoder".
+- Open the decrypted file in a hex editor.
+- Find the monster's name that you need in the hex editor.
+- The marker "DD 6D" indicates the point of interest.
+- The monster's ID is located immediately before "DD 6D".
+- For the Korean client, the monster "sakan" has an ID of 40000, which corresponds to the binary code "40 9C".
+- The next step is to edit the server file monsterscript.txt:
+- The entry should look like "40000 sakan x .. .....".
+- In place of ...., insert Hydra's information.
