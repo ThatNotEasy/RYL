@@ -38,5 +38,6 @@ def main():
 
         convert_txt_to_csv(txt_file_path, csv_file_path)
 
-if __name__ == "__main__":
-    main()
+# Main execution moved to main.py - only run if this file is executed directly
+# if __name__ == "__main__":
+#     main()

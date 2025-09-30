@@ -41,7 +41,9 @@ def auto_detect_convert_and_save(input_folder, output_folder):
 
     process_txt_files(input_folder, output_folder)
 
-input_folder = 'INPUT'  # Ganti dengan alamat folder input sebenarnya
-output_folder = 'OUTPUT'  # Ganti dengan alamat folder output sebenarnya
-
-auto_detect_convert_and_save(input_folder, output_folder)
+# Main execution moved to main.py - only run if this file is executed directly
+# input_folder = 'INPUT'  # Ganti dengan alamat folder input sebenarnya
+# output_folder = 'OUTPUT'  # Ganti dengan alamat folder output sebenarnya
+#
+# if __name__ == "__main__":
+#     auto_detect_convert_and_save(input_folder, output_folder)
