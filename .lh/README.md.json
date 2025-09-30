@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 2,
             "patches": [
                 {
                     "date": 1759247154768,
@@ -12,6 +12,10 @@
                 {
                     "date": 1759247199400,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,8 +44,26 @@\n - Network protocol analysis\r\n - File format reverse engineering\r\n - Security testing frameworks\r\n \r\n+## RYL Macros Project\r\n+This project includes **RYL-compatible macros** for all RiskYourLife game versions:\r\n+\r\n+🔗 **[RiskYourLife Macros Repository](https://github.com/ThatNotEasy/riskyourlife-macros)**\r\n+\r\n+### Macro Features\r\n+- ✅ **Universal Compatibility** - Works with all RYL game versions\r\n+- 🎮 **Game Automation** - Automated gameplay macros\r\n+- ⚡ **Performance Optimized** - Efficient and lightweight\r\n+- 🔧 **Customizable** - Easy to modify for different playstyles\r\n+- 🛡️ **Safe & Undetected** - Designed to avoid anti-cheat detection\r\n+\r\n+### Macro Types\r\n+- **Combat Macros** - Automated fighting and skill usage\r\n+- **Farming Macros** - Resource gathering automation\r\n+- **Movement Macros** - Pathing and navigation assistance\r\n+- **Utility Macros** - Inventory management and trading helpers\r\n+\r\n ## Getting Started\r\n This project is organized for security research and analysis. Each module can be used independently for specific testing scenarios.\r\n \r\n ---\r\n"
+                },
+                {
+                    "date": 1759247469434,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,18 +51,19 @@\n 🔗 **[RiskYourLife Macros Repository](https://github.com/ThatNotEasy/riskyourlife-macros)**\r\n \r\n ### Macro Features\r\n - ✅ **Universal Compatibility** - Works with all RYL game versions\r\n-- 🎮 **Game Automation** - Automated gameplay macros\r\n-- ⚡ **Performance Optimized** - Efficient and lightweight\r\n-- 🔧 **Customizable** - Easy to modify for different playstyles\r\n+- 🎮 **Core AFK Farming** - Advanced automated farming system\r\n+- ⚡ **Multi-Feature Integration** - All farming tools in one comprehensive macro\r\n+- 🔧 **Highly Customizable** - Easy to modify for different farming strategies\r\n - 🛡️ **Safe & Undetected** - Designed to avoid anti-cheat detection\r\n \r\n-### Macro Types\r\n-- **Combat Macros** - Automated fighting and skill usage\r\n-- **Farming Macros** - Resource gathering automation\r\n-- **Movement Macros** - Pathing and navigation assistance\r\n-- **Utility Macros** - Inventory management and trading helpers\r\n+### Core Functionality\r\n+- **AFK Farming Engine** - Automated resource gathering and experience farming\r\n+- **Multi-Map Support** - Works across different game locations\r\n+- **Smart Pathing** - Intelligent movement and positioning\r\n+- **Loot Management** - Automatic inventory and drop handling\r\n+- **Anti-AFK Detection** - Built-in mechanisms to avoid detection\r\n \r\n ## Getting Started\r\n This project is organized for security research and analysis. Each module can be used independently for specific testing scenarios.\r\n \r\n"
                 }
             ],
             "date": 1759247154768,

@@ -52,16 +52,17 @@ This project includes **RYL-compatible macros** for all RiskYourLife game versio
 
 ### Macro Features
 - ✅ **Universal Compatibility** - Works with all RYL game versions
-- 🎮 **Game Automation** - Automated gameplay macros
-- ⚡ **Performance Optimized** - Efficient and lightweight
-- 🔧 **Customizable** - Easy to modify for different playstyles
+- 🎮 **Core AFK Farming** - Advanced automated farming system
+- ⚡ **Multi-Feature Integration** - All farming tools in one comprehensive macro
+- 🔧 **Highly Customizable** - Easy to modify for different farming strategies
 - 🛡️ **Safe & Undetected** - Designed to avoid anti-cheat detection
 
-### Macro Types
-- **Combat Macros** - Automated fighting and skill usage
-- **Farming Macros** - Resource gathering automation
-- **Movement Macros** - Pathing and navigation assistance
-- **Utility Macros** - Inventory management and trading helpers
+### Core Functionality
+- **AFK Farming Engine** - Automated resource gathering and experience farming
+- **Multi-Map Support** - Works across different game locations
+- **Smart Pathing** - Intelligent movement and positioning
+- **Loot Management** - Automatic inventory and drop handling
+- **Anti-AFK Detection** - Built-in mechanisms to avoid detection
 
 ## Getting Started
 This project is organized for security research and analysis. Each module can be used independently for specific testing scenarios.
