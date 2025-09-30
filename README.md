@@ -1,5 +1,12 @@
 # RiskYourLife (RYL) - Personal Self-Learning Project
 
+## ⚠️ Important Notice
+**Some parts of this project are not published publicly to avoid conflicts and arguments related to game development.** This project focuses solely on **security research and penetration testing education**, not on creating or modifying game content.
+
+## 📝 Author Credits
+- **Youxiland** - Original RiskYourLife game development
+- **Gamasoft** - Game publisher and maintainer
+
 ## Overview
 This is a **personal self-learning project** focused on **penetration testing** and security research of the RiskYourLife (RYL) MMORPG game. This project is **NOT focused on game development** but rather on understanding, analyzing, and testing the security aspects of the RYL game infrastructure.
 

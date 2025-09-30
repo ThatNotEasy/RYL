@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 3,
+            "activePatchIndex": 4,
             "patches": [
                 {
                     "date": 1759247154768,
@@ -20,6 +20,10 @@
                 {
                     "date": 1759247787900,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,27 +44,41 @@\n - Network protocol analysis\r\n - File format reverse engineering\r\n - Security testing frameworks\r\n \r\n-## RYL Macros Project\r\n-This project includes **RYL-compatible macros** for all RiskYourLife game versions:\r\n+## Related Projects\r\n \r\n+### RYL Macros Project\r\n+**RYL-compatible macros** for all RiskYourLife game versions:\r\n+\r\n 🔗 **[RiskYourLife Macros Repository](https://github.com/ThatNotEasy/riskyourlife-macros)**\r\n \r\n-### Macro Features\r\n+#### Macro Features\r\n - ✅ **Universal Compatibility** - Works with all RYL game versions\r\n - 🎮 **Core AFK Farming** - Advanced automated farming system\r\n - ⚡ **Multi-Feature Integration** - All farming tools in one comprehensive macro\r\n - 🔧 **Highly Customizable** - Easy to modify for different farming strategies\r\n - 🛡️ **Safe & Undetected** - Designed to avoid anti-cheat detection\r\n \r\n-### Core Functionality\r\n+#### Core Functionality\r\n - **AFK Farming Engine** - Automated resource gathering and experience farming\r\n - **Multi-Map Support** - Works across different game locations\r\n - **Smart Pathing** - Intelligent movement and positioning\r\n - **Loot Management** - Automatic inventory and drop handling\r\n - **Anti-AFK Detection** - Built-in mechanisms to avoid detection\r\n \r\n+### Virtual-FS Project\r\n+**External unpacker for embedded file configurations**:\r\n+\r\n+🔗 **[Virtual-FS Repository](https://github.com/ThatNotEasy/Virtual-FS)**\r\n+\r\n+#### Purpose\r\n+- 📦 **File Unpacking** - Extracts embedded configuration files\r\n+- 🔍 **Data Analysis** - Analyzes packed game resources\r\n+- 🛠️ **Configuration Extraction** - Retrieves hidden game settings\r\n+- 🔧 **Resource Investigation** - Examines packed game assets\r\n+- 📊 **Format Research** - Studies proprietary file structures\r\n+\r\n ## Getting Started\r\n This project is organized for security research and analysis. Each module can be used independently for specific testing scenarios.\r\n \r\n ---\r\n"
+                },
+                {
+                    "date": 1759248494336,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,13 @@\n # RiskYourLife (RYL) - Personal Self-Learning Project\r\n \r\n+## ⚠️ Important Notice\r\n+**Some parts of this project are not published publicly to avoid conflicts and arguments related to game development.** This project focuses solely on **security research and penetration testing education**, not on creating or modifying game content.\r\n+\r\n+## 📝 Author Credits\r\n+- **Youxiland** - Original RiskYourLife game development\r\n+- **Gamasoft** - Game publisher and maintainer\r\n+\r\n ## Overview\r\n This is a **personal self-learning project** focused on **penetration testing** and security research of the RiskYourLife (RYL) MMORPG game. This project is **NOT focused on game development** but rather on understanding, analyzing, and testing the security aspects of the RYL game infrastructure.\r\n \r\n ## Project Focus\r\n"
                 }
             ],
             "date": 1759247154768,
