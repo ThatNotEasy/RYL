@@ -1,0 +1,22 @@
+{
+    "sourceFile": "README.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1759247154768,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1759247199400,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,8 +44,26 @@\n - Network protocol analysis\r\n - File format reverse engineering\r\n - Security testing frameworks\r\n \r\n+## RYL Macros Project\r\n+This project includes **RYL-compatible macros** for all RiskYourLife game versions:\r\n+\r\n+🔗 **[RiskYourLife Macros Repository](https://github.com/ThatNotEasy/riskyourlife-macros)**\r\n+\r\n+### Macro Features\r\n+- ✅ **Universal Compatibility** - Works with all RYL game versions\r\n+- 🎮 **Game Automation** - Automated gameplay macros\r\n+- ⚡ **Performance Optimized** - Efficient and lightweight\r\n+- 🔧 **Customizable** - Easy to modify for different playstyles\r\n+- 🛡️ **Safe & Undetected** - Designed to avoid anti-cheat detection\r\n+\r\n+### Macro Types\r\n+- **Combat Macros** - Automated fighting and skill usage\r\n+- **Farming Macros** - Resource gathering automation\r\n+- **Movement Macros** - Pathing and navigation assistance\r\n+- **Utility Macros** - Inventory management and trading helpers\r\n+\r\n ## Getting Started\r\n This project is organized for security research and analysis. Each module can be used independently for specific testing scenarios.\r\n \r\n ---\r\n"
+                }
+            ],
+            "date": 1759247154768,
+            "name": "Commit-0",
+            "content": "# RiskYourLife (RYL) - Personal Self-Learning Project\r\n\r\n## Overview\r\nThis is a **personal self-learning project** focused on **penetration testing** and security research of the RiskYourLife (RYL) MMORPG game. This project is **NOT focused on game development** but rather on understanding, analyzing, and testing the security aspects of the RYL game infrastructure.\r\n\r\n## Project Focus\r\n- 🔒 **Penetration Testing** - Identifying and analyzing security vulnerabilities\r\n- 🛡️ **Security Research** - Understanding game security mechanisms\r\n- 🔍 **Reverse Engineering** - Analyzing game protocols and data structures\r\n- 📊 **Database Analysis** - Examining game database structures and data flow\r\n- 🌐 **Network Analysis** - Studying client-server communication patterns\r\n\r\n## Learning Objectives\r\n- Understanding MMORPG security architecture\r\n- Learning penetration testing methodologies for game servers\r\n- Analyzing database security in gaming environments\r\n- Researching common vulnerabilities in online gaming systems\r\n- Developing security testing tools and scripts\r\n\r\n## Project Structure\r\n\r\n### Self-Modules/\r\nContains various tools and scripts for analyzing RYL game components:\r\n- **Database Tools** - MySQL/SQL Server connectors and analyzers\r\n- **File Converters** - RYL2 itemscript and text file processors\r\n- **Security Tools** - Connection testers and vulnerability scanners\r\n- **Data Migration** - Tools for analyzing game data structures\r\n\r\n### Server-Side/\r\nOriginal RYL game server files and web interface for research purposes.\r\n\r\n### Client-Side/\r\nGame client files for analysis and testing.\r\n\r\n## Important Notes\r\n- ⚠️ **Educational Purpose Only** - This project is for learning and research\r\n- 🔒 **No Exploitation** - Focus is on understanding, not exploiting vulnerabilities\r\n- 📚 **Self-Learning** - Personal project for skill development\r\n- 🎯 **Pentesting Focus** - Security testing rather than development\r\n\r\n## Tools & Technologies\r\n- Python scripting for automation\r\n- Database analysis (MySQL, SQL Server)\r\n- Network protocol analysis\r\n- File format reverse engineering\r\n- Security testing frameworks\r\n\r\n## Getting Started\r\nThis project is organized for security research and analysis. Each module can be used independently for specific testing scenarios.\r\n\r\n---\r\n*Personal learning project - Focused on security research and penetration testing education*\r\n"
+        }
+    ]
+}
