@@ -2,4 +2,4 @@
 env/*
 venv/*
 config.ini
-.lh
+.lh/*

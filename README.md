@@ -45,24 +45,38 @@ Game client files for analysis and testing.
 - File format reverse engineering
 - Security testing frameworks
 
-## RYL Macros Project
-This project includes **RYL-compatible macros** for all RiskYourLife game versions:
+## Related Projects
+
+### RYL Macros Project
+**RYL-compatible macros** for all RiskYourLife game versions:
 
 🔗 **[RiskYourLife Macros Repository](https://github.com/ThatNotEasy/riskyourlife-macros)**
 
-### Macro Features
+#### Macro Features
 - ✅ **Universal Compatibility** - Works with all RYL game versions
 - 🎮 **Core AFK Farming** - Advanced automated farming system
 - ⚡ **Multi-Feature Integration** - All farming tools in one comprehensive macro
 - 🔧 **Highly Customizable** - Easy to modify for different farming strategies
 - 🛡️ **Safe & Undetected** - Designed to avoid anti-cheat detection
 
-### Core Functionality
+#### Core Functionality
 - **AFK Farming Engine** - Automated resource gathering and experience farming
 - **Multi-Map Support** - Works across different game locations
 - **Smart Pathing** - Intelligent movement and positioning
 - **Loot Management** - Automatic inventory and drop handling
 - **Anti-AFK Detection** - Built-in mechanisms to avoid detection
+
+### Virtual-FS Project
+**External unpacker for embedded file configurations**:
+
+🔗 **[Virtual-FS Repository](https://github.com/ThatNotEasy/Virtual-FS)**
+
+#### Purpose
+- 📦 **File Unpacking** - Extracts embedded configuration files
+- 🔍 **Data Analysis** - Analyzes packed game resources
+- 🛠️ **Configuration Extraction** - Retrieves hidden game settings
+- 🔧 **Resource Investigation** - Examines packed game assets
+- 📊 **Format Research** - Studies proprietary file structures
 
 ## Getting Started
 This project is organized for security research and analysis. Each module can be used independently for specific testing scenarios.
