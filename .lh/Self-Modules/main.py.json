@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 12,
+            "activePatchIndex": 13,
             "patches": [
                 {
                     "date": 1759246465793,
@@ -56,6 +56,10 @@
                 {
                     "date": 1759246832851,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -293,13 +293,13 @@\n         logger.info(f\"Restoring database from {args.backup_file}\")\r\n \r\n         # Update global variables in database_restorer module\r\n         import modules.database_restorer as database_restorer\r\n-        restore_database.server = args.server\r\n-        restore_database.database = args.database\r\n-        restore_database.username = args.username or 'your_username'\r\n-        restore_database.password = args.password or 'your_password'\r\n-        restore_database.backup_file = args.backup_file\r\n+        database_restorer.server = args.server\r\n+        database_restorer.database = args.database\r\n+        database_restorer.username = args.username or 'your_username'\r\n+        database_restorer.password = args.password or 'your_password'\r\n+        database_restorer.backup_file = args.backup_file\r\n \r\n         try:\r\n             setup_logging()\r\n             restore_database_and_create_table()\r\n"
+                },
+                {
+                    "date": 1759246948800,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n logging.basicConfig(\r\n     level=logging.INFO,\r\n     format='%(asctime)s - %(levelname)s - %(message)s',\r\n     handlers=[\r\n-        logging.FileHandler('self_modules.log'),\r\n+        logging.FileHandler('logs/self_modules.log'),\r\n         logging.StreamHandler()\r\n     ]\r\n )\r\n logger = logging.getLogger(__name__)\r\n"
                 }
             ],
             "date": 1759246465793,

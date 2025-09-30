@@ -17,7 +17,7 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler('self_modules.log'),
+        logging.FileHandler('logs/self_modules.log'),
         logging.StreamHandler()
     ]
 )
