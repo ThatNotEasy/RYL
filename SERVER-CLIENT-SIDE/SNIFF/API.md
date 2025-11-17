@@ -1,6 +1,7 @@
 ## AS KNOWN
 - id-rsassa-pkcs1-v1_5-with-sha3-2 24.1.1
 - encryptedprivatekeyinfo
+- http://ddos.dnsnb8[.]net/cj/k1.rar
 
 # SNIPPET 1
 
